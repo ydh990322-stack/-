@@ -1,0 +1,18 @@
+{
+  "name": "momdad-community",
+  "version": "1.0.0",
+  "description": "육아하는 엄마·아빠들을 위한 정보 공유 / 소통 / 이벤트 / 포인트 커뮤니티",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --no-warnings=ExperimentalWarning server.js",
+    "dev": "node --no-warnings=ExperimentalWarning --watch server.js",
+    "test": "node --no-warnings=ExperimentalWarning --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

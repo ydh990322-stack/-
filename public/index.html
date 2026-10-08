@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>맘앤대디 라운지 · 육아하는 엄마아빠 커뮤니티</title>
+  <meta name="description" content="육아하는 엄마·아빠들이 정보를 나누고, 소통하고, 이벤트에 참여해 포인트를 모으는 커뮤니티" />
+  <meta property="og:title" content="맘앤대디 라운지" />
+  <meta property="og:description" content="육아 정보 공유 · 소통 · 매주 이벤트 · 포인트로 상품 교환과 현금 출금까지!" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍼</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a href="#/" class="logo"><span>🍼</span> <b id="site-name">맘앤대디 라운지</b></a>
+      <nav class="mainnav">
+        <a href="#/board" data-nav="board">커뮤니티</a>
+        <a href="#/events" data-nav="events">이벤트</a>
+        <a href="#/shop" data-nav="shop">포인트샵</a>
+        <a href="#/guide" data-nav="guide">포인트 안내</a>
+      </nav>
+      <div class="userbox" id="userbox"></div>
+    </div>
+  </header>
+
+  <main id="app" class="wrap"></main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><b>맘앤대디 라운지</b> · 육아하는 엄마·아빠를 위한 정보 공유 커뮤니티</p>
+      <p class="muted">포인트는 커뮤니티 활동 보상이며, 현금 출금 시 관련 법령에 따라 본인 확인 및 세금 원천징수가 진행될 수 있습니다.</p>
+    </div>
+  </footer>
+
+  <nav class="tabbar">
+    <a href="#/" data-nav="home"><span>🏠</span>홈</a>
+    <a href="#/board" data-nav="board"><span>💬</span>커뮤니티</a>
+    <a href="#/events" data-nav="events"><span>🎉</span>이벤트</a>
+    <a href="#/shop" data-nav="shop"><span>🎁</span>포인트샵</a>
+    <a href="#/me" data-nav="me"><span>👤</span>내정보</a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal" class="modal" hidden></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
